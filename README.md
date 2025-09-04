@@ -150,6 +150,3 @@ Contributions are welcome! Please:
 - Commit changes (git commit -m 'Add your feature').
 - Push to the branch (git push origin feature/your-feature).
 - Open a pull PR.
-
-
-📬 Contact
