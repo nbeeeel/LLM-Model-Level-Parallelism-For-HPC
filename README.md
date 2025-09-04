@@ -95,29 +95,6 @@ The script measures:
 - Total runtime for all prompts.
 - Memory usage per node (before and after model loading).
 
-### Example output:
-text=======================================
-4-NODE LAYER SPLITTING TEST
-=======================================
-Model: LLaMA 3.2-3B
-Layer distribution:
-  Node 0: layers 0-7 (8 layers) + embeddings
-  Node 1: layers 8-15 (8 layers)
-  Node 2: layers 16-23 (8 layers)
-  Node 3: layers 24-31 (8 layers) + norm + lm_head
-=======================================
-Prompt: What is artificial intelligence?
-Response: Artificial intelligence is the simulation of human intelligence in machines, enabling them to perform tasks like reasoning, learning, and decision-making.
-Stats: 20 tokens, 15.5 tok/s
-...
-RESULTS SUMMARY
-=======================================
-Prompts: 5
-Total tokens: 120
-Avg speed: 14.8 tok/s
-Total time: 8.12s
-=======================================
-
 ### ⚙️ Code Structure
 
 model_parallel_4node.py:
